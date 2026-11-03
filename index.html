@@ -1,249 +1,703 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Missing You Is a Part of Moving On</title>
-<meta name="description" content="A personal geography of Shanghai — a photo essay by Ruiqi/Rachael Tong.">
-<style>
-:root{--bg:#f5f0eb;--ink:#1f1a19;--muted:#55443d;--brown:#684842;--rule:#e3d5cb;--frame:#eae2db;--card:#fff;--note:#fff9f4}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif}
-a{color:inherit}
-header{background:var(--brown);color:#fff;padding:48px 24px 40px}
-header>*{max-width:760px;margin-left:auto;margin-right:auto}
-.kicker{font-size:13px;letter-spacing:.06em;text-transform:uppercase;opacity:.8;margin-top:0}
-h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(32px,6vw,52px);line-height:1.1;margin:.3em auto .4em}
-.lede{font-size:17px;opacity:.92;margin-bottom:0}
-main{max-width:620px;margin:0 auto;padding:32px 16px 64px}
+<html lang="en">
 
-/* profile */
-.profile{display:flex;gap:20px;align-items:center;margin:0 0 20px}
-.avatar{flex:none;width:76px;height:76px;border-radius:50%;padding:3px;background:linear-gradient(45deg,#c9a27e,var(--brown))}
-.avatar img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;border:2px solid var(--bg)}
-.profile .name{font-weight:600;margin:0}
-.stats{display:flex;gap:18px;font-size:14px;color:var(--muted);margin:2px 0 0}
-.stats b{color:var(--ink)}
-.bio{font-size:15px;margin:0 0 24px}
-.bio p{margin:0 0 8px}
-.bio .muted{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin:0 0 40px}
-.grid a{position:relative;display:block;aspect-ratio:1;overflow:hidden;background:var(--frame)}
-.grid img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .2s}
-.grid a:hover img{opacity:.8}
-.grid .pair{display:grid;grid-template-columns:1fr 1fr;gap:1px}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Missing You Is a Part of Moving On</title>
+  <meta name="description" content="A personal geography of Shanghai — a photo essay by Ruiqi/Rachael Tong.">
+  <style>
+    :root {
+      --bg: #f5f0eb;
+      --ink: #1f1a19;
+      --muted: #55443d;
+      --brown: #684842;
+      --rule: #e3d5cb;
+      --frame: #eae2db;
+      --card: #fff;
+      --note: #fff9f4
+    }
 
-/* posts */
-.post{background:var(--card);border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin:0 0 40px;scroll-margin-top:16px}
-.post-head{display:flex;align-items:center;gap:10px;padding:12px 14px}
-.post-head .avatar{width:34px;height:34px;padding:2px}
-.post-head .avatar img{border-width:1px}
-.who{line-height:1.25;font-size:14px}
-.who b{display:block}
-.who small{color:var(--muted);font-size:12px}
-.post-head .page{margin-left:auto;font-size:12px;color:var(--muted)}
-figure{margin:0;background:var(--frame)}
-figure img{display:block;width:100%;height:auto}
-.diptych{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--card)}
-.diptych figure{position:relative;aspect-ratio:4/5;overflow:hidden}
-.diptych img{width:100%;height:100%;object-fit:cover}
-.diptych figcaption{position:absolute;top:10px;left:10px;background:rgba(31,26,25,.7);color:#fff;font-size:12px;padding:2px 8px;border-radius:10px}
-.actions{display:flex;gap:14px;padding:10px 14px 2px}
-.actions button{all:unset;cursor:pointer;line-height:0}
-.actions svg{width:24px;height:24px;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
-.actions .save{margin-left:auto}
-.actions .on svg{fill:var(--brown);stroke:var(--brown)}
-.post-body{padding:6px 14px 18px}
-.quote{font-family:Georgia,serif;font-size:21px;line-height:1.3;margin:4px 0 10px}
-.legend{margin:0 0 12px}
-.legend b{margin-right:4px}
-.analysis{color:var(--muted);border-left:2px solid var(--rule);padding-left:12px;margin:0}
-.analysis::before{content:"Reflection";display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--brown);margin-bottom:2px}
-.closing{text-align:center;padding:32px 20px;background:var(--note)}
-.closing p{margin:0 0 12px;color:var(--muted)}
-.closing .quote{color:var(--ink);font-size:24px}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:8px 0 0}
-@media (max-width:420px){.profile{gap:14px}.avatar{width:62px;height:62px}.stats{gap:12px}.quote{font-size:19px}}
-</style></head><body>
-<header><p class="kicker">Ruiqi/Rachael Tong, photo essay of PoH Fall26</p>
-<h1>Missing You Is a Part of Moving On</h1>
-<p class="lede">A personal geography of Shanghai. The photographs are the work: the image, erasure, handwriting, and legend belong together.</p></header>
-<main>
+    * {
+      box-sizing: border-box
+    }
 
-<section class="profile" aria-label="Profile">
-<div class="avatar"><img src="images/avatar.jpg" alt="Rachael Tong"></div>
-<div><p class="name">Rachael Tong</p>
-<p class="stats"><span><b>12</b> posts</span><span><b>2007–2026</b></span><span><b>Shanghai</b></span></p></div>
-</section>
-<div class="bio">
-<p>Shanghai is where I was born, raised and am still living. These are photos of me from early childhood to young adulthood, with some of the people digitally erased in Procreate: by altering photographs that were taken to preserve someone’s presence, I make their absence visible.</p>
-<p class="muted">Remembering isn’t the same as returning, and moving on doesn’t mean forgetting. Inspired by Geloy Concepcion’s erasure-based photography and Candace Chen’s <i>NY Ghost</i> in <i>Severance</i>.</p>
-</div>
+    html {
+      scroll-behavior: smooth
+    }
 
-<nav class="grid" aria-label="All posts">
-<a href="#p1"><img src="images/01-2008-birthday.jpg" alt="2008, cousin’s 12th birthday" loading="lazy"></a>
-<a href="#p2"><img src="images/02-2007-playground.jpg" alt="2007, playground" loading="lazy"></a>
-<a href="#p3"><img src="images/03-2007-father.jpg" alt="2007, with my father" loading="lazy"></a>
-<a href="#p4"><img src="images/04-2007-old-house.jpg" alt="2007, the old family house" loading="lazy"></a>
-<a href="#p5"><img src="images/05-2023-graduation-stars.jpg" alt="2023, graduation party" loading="lazy"></a>
-<a href="#p6"><img src="images/06-2021-window-shopping.jpg" alt="2021, window shopping" loading="lazy"></a>
-<a href="#p7"><img src="images/07-2026-friend-n.jpg" alt="2026, with N and her boyfriend" loading="lazy"></a>
-<a href="#p8"><img src="images/08-2023-beetle-street.jpg" alt="2023, a small street" loading="lazy"></a>
-<a href="#p9"><img src="images/09-2025-cyberpunk.jpg" alt="2025, playing Cyberpunk 2077" loading="lazy"></a>
-<a href="#p10"><img src="images/10-2024-dojo-oss.jpg" alt="2024, the dojo" loading="lazy"></a>
-<a href="#p11" class="pair"><img src="images/11a-2007-sundial.jpg" alt="2007, sundial on Century Avenue" loading="lazy"><img src="images/11b-2026-sundial.jpg" alt="2026, sundial on Century Avenue" loading="lazy" style="object-position:42% 50%"></a>
-<a href="#p12"><img src="images/12-2024-volleyball-court.jpg" alt="2024, high-school volleyball court" loading="lazy"></a>
-</nav>
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif
+    }
 
-<article class="post" id="p1">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>The old family house, Shanghai · 2008</small></div><span class="page">p. 2</span></div>
-<figure><img src="images/01-2008-birthday.jpg" alt="A smiling child hugs her cousin beside a birthday cake with a ‘12’ candle; his face is erased and replaced with the handwritten words ‘We grew up before we realized it.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“We grew up before we realized it.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2008, at the old house of my family celebrating my cousin’s 12th birthday. I used Procreate to digitally erase his face and write “We grew up before we realized it”.</p>
-<p class="analysis">The candles say twelve, but without his face my cousin becomes a figure of time rather than a single person. Growing up is only noticed in retrospect, once the photograph has become the one place where that afternoon still exists.</p>
-</div></article>
+    a {
+      color: inherit
+    }
 
-<article class="post" id="p2">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>Playground beside my uncle’s old house · 2007</small></div><span class="page">p. 3</span></div>
-<figure><img src="images/02-2007-playground.jpg" alt="Two children sit holding hands at the bottom of a blue slide; the older girl’s face is erased and replaced with ‘I remember us before I learned to remember.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“I remember us before I learned to remember.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2007, at the playground beside my uncle’s old house with my cousin when she came to Shanghai. I used Procreate to digitally erase her face and write “I remember us before I learned to remember”.</p>
-<p class="analysis">The photograph holds a memory from before memory became deliberate: a childhood relationship preserved, but no longer fully accessible. The two of us are still holding hands — the erasure keeps the gesture of closeness and removes only the detail that would make the memory exact.</p>
-</div></article>
+    header {
+      background: var(--brown);
+      color: #fff;
+      padding: 48px 24px 40px
+    }
 
-<article class="post" id="p3">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>The old family house, Shanghai · 2007</small></div><span class="page">p. 4</span></div>
-<figure><img src="images/03-2007-father.jpg" alt="A toddler in a red coat sits on her father’s lap; his face is erased and replaced with ‘your love is real, so is your abuse.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Your love is real, so is your abuse.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2007, at the old house of my family with my father. I used Procreate to digitally erase his face and write “your love is real, so is your abuse”.</p>
-<p class="analysis">A photograph cannot summarize an entire relationship. Affection and harm can coexist in the same history. I may remember someone’s kindness more easily than their flaws; the words written over his face refuse that idealized version and keep both truths in the frame.</p>
-</div></article>
+    header>* {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto
+    }
 
-<article class="post" id="p4">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>The old family house, Shanghai · 2007</small></div><span class="page">p. 5</span></div>
-<figure><img src="images/04-2007-old-house.jpg" alt="A toddler in a red butterfly sweater sits on a woman’s lap; the woman’s face is erased and replaced with ‘missing you is a part of moving on.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Missing you is a part of moving on.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2007, at the old house of my family. I used Procreate to digitally erase her face and write “missing you is a part of moving on”.</p>
-<p class="analysis">A single photograph cannot summarize an entire relationship, so I find myself patching up and reconstructing the past from these pieces. As I grow older, an unremarkable afternoon becomes a reminder of a period I can’t revisit. Pictures don’t carry fixed feelings; they trigger my experiences, and I read them differently as time passes.</p>
-</div></article>
+    .kicker {
+      font-size: 13px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      opacity: .8;
+      margin-top: 0
+    }
 
-<article class="post" id="p5">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>Graduation party, Shanghai · 2023</small></div><span class="page">p. 7</span></div>
-<figure><img src="images/05-2023-graduation-stars.jpg" alt="Overhead view of a hotpot table; the friends’ reaching arms are erased with white strokes, each marked with a drawn star." loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">Scattered like stars ✶</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2023 at a party with my friends after our senior high school graduation. I used Procreate to digitally erase their hands &amp; arms and drew a star on each of them, because we literally scattered all over the world like stars in the sky.</p>
-<p class="analysis">The shared hotpot is still at the centre; only the hands reaching into it are gone, each pointing in a different direction. A star is distant but still visible — the friendship is no longer at one table, yet it hasn’t disappeared from the sky.</p>
-</div></article>
+    h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.1;
+      margin: .3em auto .4em
+    }
 
-<article class="post" id="p6">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>Window shopping, Shanghai · 2021</small></div><span class="page">p. 8</span></div>
-<figure><img src="images/06-2021-window-shopping.jpg" alt="A mirror selfie of me in a straw hat; my friend’s body beside me is erased into a white silhouette reading ‘Best counselor ever.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Best ‘counselor’ ever.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2021 with my friend X during window shopping. I used Procreate to digitally erase her body and wrote “best ‘counselor’ ever”.</p>
-<p class="analysis">Sometimes what we miss is not only a person, but also the version of ourselves who existed alongside them. The white silhouette keeps her exact outline in the mirror — the shape of someone who listened, still standing next to me.</p>
-</div></article>
+    .lede {
+      font-size: 17px;
+      opacity: .92;
+      margin-bottom: 0
+    }
 
-<article class="post" id="p7">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>Dinner with friends, Shanghai · 2026</small></div><span class="page">p. 9</span></div>
-<figure><img src="images/07-2026-friend-n.jpg" alt="A dinner table with drinks; my friends’ hands are erased with white strokes reading ‘Maybe I miss you’ and ‘Maybe I miss who I was with you.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Maybe I miss you, maybe I miss who I was with you.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2026 with my friend N and her boyfriend. I used Procreate to digitally erase their hands and wrote “maybe I miss you, maybe I miss who I was with you”.</p>
-<p class="analysis">The absence invites a question: am I remembering the person, or the self I was with them? Even the most recent photo in the series is already becoming a memory — nostalgia doesn’t wait for years to pass.</p>
-</div></article>
+    main {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 32px 16px 64px
+    }
 
-<article class="post" id="p8">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>A small street in Shanghai · 2023</small></div><span class="page">p. 10</span></div>
-<figure><img src="images/08-2023-beetle-street.jpg" alt="Two shadows on a pavement; my friend’s hand holding a beetle is erased into a white stroke reading ‘We used to be us. We are no longer us. We won’t be us any more.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“We used to be us. We are no longer us. We won’t be us any more.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2023 when I caught a beetle in a small street in Shanghai with my friend K. I digitally erased their hand and wrote “we used to be us. We are no longer us. We won’t be us any more”.</p>
-<p class="analysis">Relationships change even when a photograph keeps one moment intact. The sentence moves through past, present and future, while our two shadows stay on the pavement — a trace the camera recorded that the erasure cannot fully remove.</p>
-</div></article>
+    /* profile */
+    .profile {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 0 0 20px
+    }
 
-<article class="post" id="p9">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>Playing Cyberpunk 2077 · 2025</small></div><span class="page">p. 11</span></div>
-<figure><img src="images/09-2025-cyberpunk.jpg" alt="Two game controllers held up in front of a screen showing Cyberpunk 2077; my friend’s hand is erased and replaced with ‘Somewhere in my memory, we are still playing.’" loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Somewhere in my memory, we are still playing.”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2025 with my friend J when we were playing Cyberpunk 2077. I used Procreate to digitally erase her hand and wrote “Somewhere in my memory, we are still playing”.</p>
-<p class="analysis">In <i>Severance</i>, Ashley’s nostalgia draws her back to the past until she is imprisoned in revisiting it; Candace photographs the changing world and learns to consider what has disappeared without restoring it. My project sits somewhere between the two: I revisit the past while questioning the version of it that I have chosen to preserve.</p>
-</div></article>
+    .avatar {
+      flex: none;
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(45deg, #c9a27e, var(--brown))
+    }
 
-<article class="post" id="p10">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>My dojo, Shanghai · 2024</small></div><span class="page">p. 12</span></div>
-<figure><img src="images/10-2024-dojo-oss.jpg" alt="A group of Brazilian jiu-jitsu students in gis on the mat, faces erased, with ‘OSS!’ written below." loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Oss!”</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2024 in my dojo in memory of my first two stripes in Brazilian jiu-jitsu — my friends were doing odd postures and chokeholds to me as a celebration. I digitally erased their faces and wrote “oss!”, an etiquette expression in many martial arts representing respect, gratitude and understanding.</p>
-<p class="analysis">Absence here does not erase the shared celebration; the gesture remains. Only the faces are gone — the gis, belts and playful chokeholds stay, because in this memory the body and the ritual matter more than who stood where.</p>
-</div></article>
+    .avatar img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--bg)
+    }
 
-<article class="post" id="p11">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>Sundial, Century Avenue · 2007 &amp; 2026</small></div><span class="page">p. 13</span></div>
-<div class="diptych">
-<figure><img src="images/11a-2007-sundial.jpg" alt="Me as a toddler laughing in a stroller on Century Avenue; my cousin is erased and replaced with ‘something old, something new.’" loading="lazy"><figcaption>2007</figcaption></figure>
-<figure><img src="images/11b-2026-sundial.jpg" alt="The sundial sculpture on Century Avenue in 2026, surrounded by office towers under a blue sky." loading="lazy" style="object-position:42% 50%"><figcaption>Oct 17, 2026</figcaption></figure>
-</div>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote">“Something old, something new.”</p>
-<p class="legend"><b>Rachael Tong</b>Left: shot in 2007 at the sundial tourist attraction on Century Avenue with my cousin. I used Procreate to digitally erase his face and wrote “something old, something new”. Right: shot on October 17, 2026, at the same attraction from a different perspective.</p>
-<p class="analysis">The place remains recognisable, but the people and the person looking at it have changed. Side by side: in 2007 the sundial is a background to a family outing; in 2026 it is the subject, photographed alone, by the child who used to sit in the stroller.</p>
-</div></article>
+    .profile .name {
+      font-weight: 600;
+      margin: 0
+    }
 
-<article class="post" id="p12">
-<div class="post-head"><div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div><div class="who"><b>Rachael Tong</b><small>My high school volleyball court · 2024</small></div><span class="page">p. 13</span></div>
-<figure><img src="images/12-2024-volleyball-court.jpg" alt="A school running track and volleyball court seen through a fence; the students playing are erased into white strokes, with a Chinese verse written in the sky." loading="lazy"></figure>
-<div class="actions" aria-hidden="true"></div>
-<div class="post-body">
-<p class="quote" lang="zh">欲买桂花同载酒，终不似，少年游</p>
-<p class="legend"><b>Rachael Tong</b>Shot in 2024 when I went back to my high school to visit my teachers — the volleyball court, since I always played volleyball with classmates back then. I used Procreate to digitally erase the students playing volleyball and wrote “欲买桂花同载酒，终不似，少年游” (I’d buy osmanthus and wine for old-time cheer — yet never taste that carefree spirit of my youth).</p>
-<p class="analysis">Moving on doesn’t always involve losing a person or leaving a place behind. Sometimes a familiar place continues to exist, but I no longer occupy the same role within it. I can return, recognise its meaning, and accept that I am no longer part of the scene in the same way.</p>
-</div></article>
+    .stats {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      color: var(--muted);
+      margin: 2px 0 0
+    }
 
-<section class="post closing">
-<p>Perhaps the Shanghai I remember never existed exactly as I remember it. It has been reconstructed through photos, relationships, and the person I have become. The people and places that shaped me remain part of my history, even when they no longer occupy the same place in my life.</p>
-<p class="quote">The city remained. We changed.<br>And “missing you” became a part of moving on.</p>
-</section>
+    .stats b {
+      color: var(--ink)
+    }
 
-<footer>© Ruiqi/Rachael Tong · Photo essay, PoH Fall 2026</footer>
-</main>
-<script>
-const icons = {
-  like: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
-  comment: '<path d="M20 12a8 8 0 1 1-3.2-6.4A8 8 0 0 1 20 12zm0 0v8l-3.5-2.5"/>',
-  share: '<path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/>',
-  save: '<path d="M6 3h12v18l-6-5-6 5z"/>'
-};
-document.querySelectorAll('.actions').forEach(bar => {
-  bar.removeAttribute('aria-hidden');
-  bar.innerHTML = ['like', 'comment', 'share', 'save'].map(k =>
-    `<button class="${k}" aria-label="${k}" ${k === 'like' || k === 'save' ? 'aria-pressed="false"' : ''}><svg viewBox="0 0 24 24">${icons[k]}</svg></button>`).join('');
-  bar.querySelectorAll('.like,.save').forEach(b => b.addEventListener('click', () => {
-    b.classList.toggle('on');
-    b.setAttribute('aria-pressed', b.classList.contains('on'));
-  }));
-  bar.querySelector('.comment').addEventListener('click', () =>
-    bar.parentElement.querySelector('.analysis').scrollIntoView({block: 'center'}));
-  bar.querySelector('.share').addEventListener('click', () => {
-    const url = location.href.split('#')[0] + '#' + bar.closest('.post').id;
-    if (navigator.share) navigator.share({url}).catch(() => {});
-    else navigator.clipboard && navigator.clipboard.writeText(url);
-  });
-});
-</script>
-</body></html>
+    .bio {
+      font-size: 15px;
+      margin: 0 0 24px
+    }
+
+    .bio p {
+      margin: 0 0 8px
+    }
+
+    .bio .muted {
+      color: var(--muted)
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+      margin: 0 0 40px
+    }
+
+    .grid a {
+      position: relative;
+      display: block;
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: var(--frame)
+    }
+
+    .grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity .2s
+    }
+
+    .grid a:hover img {
+      opacity: .8
+    }
+
+    .grid .pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px
+    }
+
+    /* posts */
+    .post {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 0 0 40px;
+      scroll-margin-top: 16px
+    }
+
+    .post-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px
+    }
+
+    .post-head .avatar {
+      width: 34px;
+      height: 34px;
+      padding: 2px
+    }
+
+    .post-head .avatar img {
+      border-width: 1px
+    }
+
+    .who {
+      line-height: 1.25;
+      font-size: 14px
+    }
+
+    .who b {
+      display: block
+    }
+
+    .who small {
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .post-head .page {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--muted)
+    }
+
+    figure {
+      margin: 0;
+      background: var(--frame)
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+
+    .diptych {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+      background: var(--card)
+    }
+
+    .diptych figure {
+      position: relative;
+      aspect-ratio: 4/5;
+      overflow: hidden
+    }
+
+    .diptych img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .diptych figcaption {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(31, 26, 25, .7);
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 10px
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      padding: 10px 14px 2px
+    }
+
+    .actions button {
+      all: unset;
+      cursor: pointer;
+      line-height: 0
+    }
+
+    .actions svg {
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: var(--ink);
+      stroke-width: 1.8;
+      stroke-linejoin: round;
+      stroke-linecap: round
+    }
+
+    .actions .save {
+      margin-left: auto
+    }
+
+    .actions .on svg {
+      fill: var(--brown);
+      stroke: var(--brown)
+    }
+
+    .post-body {
+      padding: 6px 14px 18px
+    }
+
+    .quote {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      line-height: 1.3;
+      margin: 4px 0 10px
+    }
+
+    .legend {
+      margin: 0 0 12px
+    }
+
+    .legend b {
+      margin-right: 4px
+    }
+
+    .analysis {
+      color: var(--muted);
+      border-left: 2px solid var(--rule);
+      padding-left: 12px;
+      margin: 0
+    }
+
+    .analysis::before {
+      content: "Reflection";
+      display: block;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--brown);
+      margin-bottom: 2px
+    }
+
+    .closing {
+      text-align: center;
+      padding: 32px 20px;
+      background: var(--note)
+    }
+
+    .closing p {
+      margin: 0 0 12px;
+      color: var(--muted)
+    }
+
+    .closing .quote {
+      color: var(--ink);
+      font-size: 24px
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 8px 0 0
+    }
+
+    @media (max-width:420px) {
+      .profile {
+        gap: 14px
+      }
+
+      .avatar {
+        width: 62px;
+        height: 62px
+      }
+
+      .stats {
+        gap: 12px
+      }
+
+      .quote {
+        font-size: 19px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p class="kicker">Ruiqi/Rachael Tong, photo essay of PoH Fall26</p>
+    <h1>Missing You is a Part of Moving On</h1>
+    <p class="lede">A personal geography of Shanghai. The photographs are the work: the image, erasure, handwriting, and
+      legend belong together.</p>
+  </header>
+  <main>
+
+    <section class="profile" aria-label="Profile">
+      <div class="avatar"><img src="images/avatar.jpg" alt="Rachael Tong"></div>
+      <div>
+        <p class="name">Rachael Tong</p>
+        <p class="stats"><span><b>12</b> posts</span><span><b>2007–2026</b></span><span><b>Shanghai</b></span></p>
+      </div>
+    </section>
+    <div class="bio">
+      <p>Shanghai is where I was born, raised and am still living. These are photos of me from early childhood to young
+        adulthood, with some of the people digitally erased in Procreate: by altering photographs that were taken to
+        preserve someone’s presence, I make their absence visible.</p>
+      <p class="muted">Remembering isn’t the same as returning, and moving on doesn’t mean forgetting. Inspired by Geloy
+        Concepcion’s erasure-based photography and Candace Chen’s <i>NY Ghost</i> in <i>Severance</i>.</p>
+    </div>
+
+    <nav class="grid" aria-label="All posts">
+      <a href="#p1"><img src="images/01-2008-birthday.jpg" alt="2008, cousin’s 12th birthday" loading="lazy"></a>
+      <a href="#p2"><img src="images/02-2007-playground.jpg" alt="2007, playground" loading="lazy"></a>
+      <a href="#p3"><img src="images/03-2007-father.jpg" alt="2007, with my father" loading="lazy"></a>
+      <a href="#p4"><img src="images/04-2007-old-house.jpg" alt="2007, the old family house" loading="lazy"></a>
+      <a href="#p5"><img src="images/05-2023-graduation-stars.jpg" alt="2023, graduation party" loading="lazy"></a>
+      <a href="#p6"><img src="images/06-2021-window-shopping.jpg" alt="2021, window shopping" loading="lazy"></a>
+      <a href="#p7"><img src="images/07-2026-friend-n.jpg" alt="2026, with N and her boyfriend" loading="lazy"></a>
+      <a href="#p8"><img src="images/08-2023-beetle-street.jpg" alt="2023, a small street" loading="lazy"></a>
+      <a href="#p9"><img src="images/09-2025-cyberpunk.jpg" alt="2025, playing Cyberpunk 2077" loading="lazy"></a>
+      <a href="#p10"><img src="images/10-2024-dojo-oss.jpg" alt="2024, the dojo" loading="lazy"></a>
+      <a href="#p11" class="pair"><img src="images/11a-2007-sundial.jpg" alt="2007, sundial on Century Avenue"
+          loading="lazy"><img src="images/11b-2026-sundial.jpg" alt="2026, sundial on Century Avenue" loading="lazy"
+          style="object-position:42% 50%"></a>
+      <a href="#p12"><img src="images/12-2024-volleyball-court.jpg" alt="2024, high-school volleyball court"
+          loading="lazy"></a>
+    </nav>
+
+    <article class="post" id="p1">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>The old family house, Shanghai · 2008</small></div><span
+          class="page">p. 2</span>
+      </div>
+      <figure><img src="images/01-2008-birthday.jpg"
+          alt="A smiling child hugs her cousin beside a birthday cake with a ‘12’ candle; his face is erased and replaced with the handwritten words ‘We grew up before we realized it.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“We grew up before we realized it.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2008, at the old house of my family celebrating my cousin’s 12th
+          birthday. I used Procreate to digitally erase his face and write “We grew up before we realized it”.</p>
+        <p class="analysis">The candles say twelve, but without his face my cousin becomes a figure of time rather than
+          a single person. Growing up is only noticed in retrospect, once the photograph has become the one place where
+          that afternoon still exists.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p2">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>Playground beside my uncle’s old house · 2007</small></div><span
+          class="page">p. 3</span>
+      </div>
+      <figure><img src="images/02-2007-playground.jpg"
+          alt="Two children sit holding hands at the bottom of a blue slide; the older girl’s face is erased and replaced with ‘I remember us before I learned to remember.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“I remember us before I learned to remember.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2007, at the playground beside my uncle’s old house with my cousin
+          when she came to Shanghai. I used Procreate to digitally erase her face and write “I remember us before I
+          learned to remember”.</p>
+        <p class="analysis">The photograph holds a memory from before memory became deliberate: a childhood relationship
+          preserved, but no longer fully accessible. The two of us are still holding hands — the erasure keeps the
+          gesture of closeness and removes only the detail that would make the memory exact.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p3">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>The old family house, Shanghai · 2007</small></div><span
+          class="page">p. 4</span>
+      </div>
+      <figure><img src="images/03-2007-father.jpg"
+          alt="A toddler in a red coat sits on her father’s lap; his face is erased and replaced with ‘your love is real, so is your abuse.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Your love is real, so is your abuse.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2007, at the old house of my family with my father. I used
+          Procreate to digitally erase his face and write “your love is real, so is your abuse”.</p>
+        <p class="analysis">A photograph cannot summarize an entire relationship. Affection and harm can coexist in the
+          same history. I may remember someone’s kindness more easily than their flaws; the words written over his face
+          refuse that idealized version and keep both truths in the frame.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p4">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>The old family house, Shanghai · 2007</small></div><span
+          class="page">p. 5</span>
+      </div>
+      <figure><img src="images/04-2007-old-house.jpg"
+          alt="A toddler in a red butterfly sweater sits on a woman’s lap; the woman’s face is erased and replaced with ‘missing you is a part of moving on.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Missing you is a part of moving on.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2007, at the old house of my family. I used Procreate to digitally
+          erase her face and write “missing you is a part of moving on”.</p>
+        <p class="analysis">A single photograph cannot summarize an entire relationship, so I find myself patching up
+          and reconstructing the past from these pieces. As I grow older, an unremarkable afternoon becomes a reminder
+          of a period I can’t revisit. Pictures don’t carry fixed feelings; they trigger my experiences, and I read them
+          differently as time passes.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p5">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>Graduation party, Shanghai · 2023</small></div><span class="page">p.
+          7</span>
+      </div>
+      <figure><img src="images/05-2023-graduation-stars.jpg"
+          alt="Overhead view of a hotpot table; the friends’ reaching arms are erased with white strokes, each marked with a drawn star."
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">Scattered like stars ✶</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2023 at a party with my friends after our senior high school
+          graduation. I used Procreate to digitally erase their hands &amp; arms and drew a star on each of them,
+          because we literally scattered all over the world like stars in the sky.</p>
+        <p class="analysis">The shared hotpot is still at the centre; only the hands reaching into it are gone, each
+          pointing in a different direction. A star is distant but still visible — the friendship is no longer at one
+          table, yet it hasn’t disappeared from the sky.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p6">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>Window shopping, Shanghai · 2021</small></div><span class="page">p.
+          8</span>
+      </div>
+      <figure><img src="images/06-2021-window-shopping.jpg"
+          alt="A mirror selfie of me in a straw hat; my friend’s body beside me is erased into a white silhouette reading ‘Best counselor ever.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Best ‘counselor’ ever.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2021 with my friend X during window shopping. I used Procreate to
+          digitally erase her body and wrote “best ‘counselor’ ever”.</p>
+        <p class="analysis">Sometimes what we miss is not only a person, but also the version of ourselves who existed
+          alongside them. The white silhouette keeps her exact outline in the mirror — the shape of someone who
+          listened, still standing next to me.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p7">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>Dinner with friends, Shanghai · 2026</small></div><span
+          class="page">p. 9</span>
+      </div>
+      <figure><img src="images/07-2026-friend-n.jpg"
+          alt="A dinner table with drinks; my friends’ hands are erased with white strokes reading ‘Maybe I miss you’ and ‘Maybe I miss who I was with you.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Maybe I miss you, maybe I miss who I was with you.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2026 with my friend N and her boyfriend. I used Procreate to
+          digitally erase their hands and wrote “maybe I miss you, maybe I miss who I was with you”.</p>
+        <p class="analysis">The absence invites a question: am I remembering the person, or the self I was with them?
+          Even the most recent photo in the series is already becoming a memory — nostalgia doesn’t wait for years to
+          pass.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p8">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>A small street in Shanghai · 2023</small></div><span class="page">p.
+          10</span>
+      </div>
+      <figure><img src="images/08-2023-beetle-street.jpg"
+          alt="Two shadows on a pavement; my friend’s hand holding a beetle is erased into a white stroke reading ‘We used to be us. We are no longer us. We won’t be us any more.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“We used to be us. We are no longer us. We won’t be us any more.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2023 when I caught a beetle in a small street in Shanghai with my
+          friend K. I digitally erased their hand and wrote “we used to be us. We are no longer us. We won’t be us any
+          more”.</p>
+        <p class="analysis">Relationships change even when a photograph keeps one moment intact. The sentence moves
+          through past, present and future, while our two shadows stay on the pavement — a trace the camera recorded
+          that the erasure cannot fully remove.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p9">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>Playing Cyberpunk 2077 · 2025</small></div><span class="page">p.
+          11</span>
+      </div>
+      <figure><img src="images/09-2025-cyberpunk.jpg"
+          alt="Two game controllers held up in front of a screen showing Cyberpunk 2077; my friend’s hand is erased and replaced with ‘Somewhere in my memory, we are still playing.’"
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Somewhere in my memory, we are still playing.”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2025 with my friend J when we were playing Cyberpunk 2077. I used
+          Procreate to digitally erase her hand and wrote “Somewhere in my memory, we are still playing”.</p>
+        <p class="analysis">In <i>Severance</i>, Ashley’s nostalgia draws her back to the past until she is imprisoned
+          in revisiting it; Candace photographs the changing world and learns to consider what has disappeared without
+          restoring it. My project sits somewhere between the two: I revisit the past while questioning the version of
+          it that I have chosen to preserve.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p10">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>My dojo, Shanghai · 2024</small></div><span class="page">p. 12</span>
+      </div>
+      <figure><img src="images/10-2024-dojo-oss.jpg"
+          alt="A group of Brazilian jiu-jitsu students in gis on the mat, faces erased, with ‘OSS!’ written below."
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Oss!”</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2024 in my dojo in memory of my first two stripes in Brazilian
+          jiu-jitsu — my friends were doing odd postures and chokeholds to me as a celebration. I digitally erased their
+          faces and wrote “oss!”, an etiquette expression in many martial arts representing respect, gratitude and
+          understanding.</p>
+        <p class="analysis">Absence here does not erase the shared celebration; the gesture remains. Only the faces are
+          gone — the gis, belts and playful chokeholds stay, because in this memory the body and the ritual matter more
+          than who stood where.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p11">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>Sundial, Century Avenue · 2007 &amp; 2026</small></div><span
+          class="page">p. 13</span>
+      </div>
+      <div class="diptych">
+        <figure><img src="images/11a-2007-sundial.jpg"
+            alt="Me as a toddler laughing in a stroller on Century Avenue; my cousin is erased and replaced with ‘something old, something new.’"
+            loading="lazy">
+          <figcaption>2007</figcaption>
+        </figure>
+        <figure><img src="images/11b-2026-sundial.jpg"
+            alt="The sundial sculpture on Century Avenue in 2026, surrounded by office towers under a blue sky."
+            loading="lazy" style="object-position:42% 50%">
+          <figcaption>Oct 17, 2026</figcaption>
+        </figure>
+      </div>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote">“Something old, something new.”</p>
+        <p class="legend"><b>Rachael Tong</b>Left: shot in 2007 at the sundial tourist attraction on Century Avenue with
+          my cousin. I used Procreate to digitally erase his face and wrote “something old, something new”. Right: shot
+          on October 17, 2026, at the same attraction from a different perspective.</p>
+        <p class="analysis">The place remains recognisable, but the people and the person looking at it have changed.
+          Side by side: in 2007 the sundial is a background to a family outing; in 2026 it is the subject, photographed
+          alone, by the child who used to sit in the stroller.</p>
+      </div>
+    </article>
+
+    <article class="post" id="p12">
+      <div class="post-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="" loading="lazy"></div>
+        <div class="who"><b>Rachael Tong</b><small>My high school volleyball court · 2024</small></div><span
+          class="page">p. 13</span>
+      </div>
+      <figure><img src="images/12-2024-volleyball-court.jpg"
+          alt="A school running track and volleyball court seen through a fence; the students playing are erased into white strokes, with a Chinese verse written in the sky."
+          loading="lazy"></figure>
+      <div class="actions" aria-hidden="true"></div>
+      <div class="post-body">
+        <p class="quote" lang="zh">欲买桂花同载酒，终不似，少年游</p>
+        <p class="legend"><b>Rachael Tong</b>Shot in 2024 when I went back to my high school to visit my teachers — the
+          volleyball court, since I always played volleyball with classmates back then. I used Procreate to digitally
+          erase the students playing volleyball and wrote “欲买桂花同载酒，终不似，少年游” (I’d buy osmanthus and wine for old-time
+          cheer — yet never taste that carefree spirit of my youth).</p>
+        <p class="analysis">Moving on doesn’t always involve losing a person or leaving a place behind. Sometimes a
+          familiar place continues to exist, but I no longer occupy the same role within it. I can return, recognise its
+          meaning, and accept that I am no longer part of the scene in the same way.</p>
+      </div>
+    </article>
+
+    <section class="post closing">
+      <p>Perhaps the Shanghai I remember never existed exactly as I remember it. It has been reconstructed through
+        photos, relationships, and the person I have become. The people and places that shaped me remain part of my
+        history, even when they no longer occupy the same place in my life.</p>
+      <p class="quote">The city remained. We changed.<br>And “missing you” became a part of moving on.</p>
+    </section>
+
+    <footer>© Ruiqi/Rachael Tong · Photo essay, PoH Fall 2026</footer>
+  </main>
+  <script>
+    const icons = {
+      like: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+      comment: '<path d="M20 12a8 8 0 1 1-3.2-6.4A8 8 0 0 1 20 12zm0 0v8l-3.5-2.5"/>',
+      share: '<path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/>',
+      save: '<path d="M6 3h12v18l-6-5-6 5z"/>'
+    };
+    document.querySelectorAll('.actions').forEach(bar => {
+      bar.removeAttribute('aria-hidden');
+      bar.innerHTML = ['like', 'comment', 'share', 'save'].map(k =>
+        `<button class="${k}" aria-label="${k}" ${k === 'like' || k === 'save' ? 'aria-pressed="false"' : ''}><svg viewBox="0 0 24 24">${icons[k]}</svg></button>`).join('');
+      bar.querySelectorAll('.like,.save').forEach(b => b.addEventListener('click', () => {
+        b.classList.toggle('on');
+        b.setAttribute('aria-pressed', b.classList.contains('on'));
+      }));
+      bar.querySelector('.comment').addEventListener('click', () =>
+        bar.parentElement.querySelector('.analysis').scrollIntoView({ block: 'center' }));
+      bar.querySelector('.share').addEventListener('click', () => {
+        const url = location.href.split('#')[0] + '#' + bar.closest('.post').id;
+        if (navigator.share) navigator.share({ url }).catch(() => { });
+        else navigator.clipboard && navigator.clipboard.writeText(url);
+      });
+    });
+  </script>
+</body>
+
+</html>
